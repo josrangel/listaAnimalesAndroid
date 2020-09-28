@@ -822,6 +822,11 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnComer
+id btnDormir
+id btnLadrar
+id btnNadar
+id btnSaltar
 id buttonPanel
 id center
 id center_horizontal
@@ -880,6 +885,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -917,6 +923,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id relative
 id reverseSawtooth
 id right
 id right_icon
@@ -969,6 +976,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
+id textView2
 id time
 id title
 id titleDividerNoCustom
@@ -980,6 +988,8 @@ id transitionToEnd
 id transitionToStart
 id triangle
 id tvElemento
+id tvNombre
+id tvPatas
 id uniform
 id up
 id useLogo
@@ -1075,6 +1085,13 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string comer
+string dormir
+string ladrar
+string nadar
+string nombre
+string patas
+string saltar
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

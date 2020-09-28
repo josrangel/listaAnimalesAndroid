@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SegundaActivity">
+    android:orientation="vertical"
+    tools:context=".SegundaActivity"
+    android:padding="10sp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:background="@color/colorPrimary" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        android:text="@string/nombre"
+        android:layout_marginVertical="10sp"/>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/nombre"
+        android:layout_marginVertical="10sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patas"
+        android:layout_marginVertical="10sp"/>
+
+    <TextView
+        android:id="@+id/tvPatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/patas"
+        android:layout_marginVertical="10sp"/>
+
+    <Button
+        android:id="@+id/btnComer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/comer"
+        android:onClick="comer"
+        android:layout_marginVertical="7sp"/>
+
+    <Button
+        android:id="@+id/btnDormir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dormir"
+        android:onClick="dormir"
+        android:layout_marginVertical="7sp"/>
+
+    <Button
+        android:id="@+id/btnSaltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saltar"
+        android:onClick="saltar"
+        android:layout_marginVertical="7sp"/>
+
+    <Button
+        android:id="@+id/btnLadrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ladrar"
+        android:onClick="ladrar"
+        android:layout_marginVertical="7sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnNadar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nadar"
+        android:onClick="nadar"
+        android:layout_marginVertical="7sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

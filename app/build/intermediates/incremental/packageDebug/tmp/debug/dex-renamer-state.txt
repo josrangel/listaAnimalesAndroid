@@ -1,4 +1,4 @@
-#Fri Sep 25 11:56:17 CDT 2020
-base.0=/Users/kmmx/AndroidStudioProjects/DialogForAlert/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Sun Sep 27 21:42:57 CDT 2020
+base.0=C\:\\Users\\dell\\Documents\\android\\ListViewAndDialogForAlertExample\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

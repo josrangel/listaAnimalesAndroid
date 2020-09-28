@@ -7,27 +7,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.josrangel.dialogforalert.entitys.Animal;
+import com.josrangel.dialogforalert.entitys.Perro;
 
 public class MiAdaptador extends BaseAdapter {
     Context context;
-    Perro[] perros;
+    Animal[] animales;
 
-    static final String EXTRA_PERRO = "com.extraperro";
+    static final String EXTRA_ANIMAL = "com.josrangel.miadapter.EXTRA_ANIMAL";
 
-    public MiAdaptador(Context context, Perro[] perros) {
+    public MiAdaptador(Context context, Animal[] animales) {
         this.context = context;
-        this.perros = perros;
+        this.animales = animales;
     }
 
     @Override
     public int getCount() {
-        return perros.length;
+        return animales.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return perros[position];
+        return animales[position];
     }
 
     @Override
@@ -41,16 +45,17 @@ public class MiAdaptador extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.item_list,parent,false);
         }
         TextView tvElemento = convertView.findViewById(R.id.tvElemento);
-        ImageView imagen = convertView.findViewById(R.id.image);
-        String nombrePerro=perros[position].getNombre();
-        tvElemento.setText(nombrePerro);
-        imagen.setImageResource(perros[position].getImagen());
-
-        tvElemento.setOnClickListener(new View.OnClickListener() {
+        TextView imagen = convertView.findViewById(R.id.image);
+        String nombreAnimal=animales[position].getNombre();
+        int color=animales[position].getColor();
+        tvElemento.setText(nombreAnimal);
+        imagen.setBackgroundColor(convertView.getResources().getColor(color));
+        RelativeLayout relative= convertView.findViewById(R.id.relative);
+        relative.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(context,SegundaActivity.class);
-                i.putExtra(EXTRA_PERRO,String.valueOf(position));
+                i.putExtra(EXTRA_ANIMAL,animales[position]);
                 context.startActivity(i);
             }
         });

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">DialogForAlert</string>
+    <string name="app_name">Lista Animales</string>
+    <string name="nombre">Nombre: </string>
+    <string name="patas">Numero de patas: </string>
+    <string name="comer">Comer</string>
+    <string name="dormir">Dormir</string>
+    <string name="saltar">Saltar</string>
+    <string name="ladrar">Ladrar</string>
+    <string name="nadar">Nadar</string>
 </resources>
